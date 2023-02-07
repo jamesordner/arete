@@ -4,7 +4,7 @@ description: >-
 baseurl: ""
 url: "https://jamesordner.github.io/arete" # the base hostname & protocol for your site, e.g. http://example.com
 
-theme: minima
+remote_theme: jekyll/minima
 
 minima:
  skin: dark
@@ -17,5 +17,6 @@ show_excerpts: true
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 permalink: /:categories/:slug/
