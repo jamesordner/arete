@@ -15,13 +15,14 @@ Arête aims to support all of the features expected of modern engines. Full 2D a
 
 **How unprecedented?**
 
-In order to generate some numbers, I took Unity’s [DOTS tutorial][DOTS-tutorial] and replicated it 1:1 in Arête. No shortcuts were taken: objects follow the same parenting hierarchy, the same meshes are loaded at runtime, and the simulation code matches Unity’s code exactly. The results are pretty incredible.
-
-[unity benchmark graphic]
+In order to generate some numbers, I took Unity’s [DOTS tutorial][DOTS-tutorial] and replicated it 1:1 in Arête. No shortcuts were taken: objects follow the same parenting hierarchy, the same meshes are loaded at runtime, and the simulation code matches Unity’s code exactly. Because the entity spawn rate in the tutorial is tied to the framerate, I capped entity spawning to 64k in both engines in order to maintain an accurate comparison.
 
 Being a part of the Rust community, I’m sure Arête will also draw comparisons to [Bevy][bevy]. I personally take a lot of inspiration from Bevy’s ease-of-use and ergonomics, but the performance speaks for itself.
 
-[bevy benchmark graphic]
+<p style="text-align: center;"><b>Average CPU Frame Time (milliseconds, less is better)</b></p>
+<img src="/assets/posts/2023-02-07/frametime.svg" style="display: block; margin: 0 auto">
+
+That's 64k entities at 920μs per frame with CPU culling and *110μs* per frame with GPU culling. 🤯
 
 **Okay, so Arête is fast. *Really* fast.** But is that really compelling enough to take on the big players? It seems like raw performance is the main selling point of Arête.
 
