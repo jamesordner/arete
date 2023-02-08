@@ -20,7 +20,7 @@ In order to generate some numbers, I took Unity’s [DOTS tutorial][DOTS-tutoria
 Being a part of the Rust community, I’m sure Arête will also draw comparisons to [Bevy][bevy]. I personally take a lot of inspiration from Bevy’s ease-of-use and ergonomics, but the performance speaks for itself.
 
 <p style="text-align: center;"><b>Average CPU Frame Time (milliseconds, less is better)</b></p>
-<img src="/assets/posts/2023-02-07/frametime.svg" style="display: block; margin: 0 auto">
+<img src="/arete/assets/posts/2023-02-07/frametime.svg" style="display: block; margin: 0 auto">
 
 That's 64k entities at 920μs per frame with CPU culling and *110μs* per frame with GPU culling. 🤯
 
