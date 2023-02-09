@@ -22,7 +22,7 @@ Being a part of the Rust community, I’m sure Arête will also draw comparisons
 <p style="text-align: center;"><b>Average CPU Frame Time (milliseconds, less is better)</b></p>
 <img src="/arete/assets/posts/2023-02-07/frametime.svg" style="display: block; margin: 0 auto">
 
-That's 64k entities at 920μs per frame with CPU culling and *110μs* per frame with GPU culling. 🤯
+That's 64k entities at 319μs per frame with CPU culling and *110μs* per frame with GPU culling. 🤯
 
 **Okay, so Arête is fast. *Really* fast.** But is that really compelling enough to take on the big players? It seems like raw performance is the main selling point of Arête.
 
